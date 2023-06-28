@@ -40,7 +40,7 @@ const Login = () => {
         <section className="px-7 py-10 rounded-md shadow-md bg-white/[0.7] flex flex-col gap-6 w-full max-w-lg">
           <Logo />
           <div className="flex flex-col gap-2">
-            <h1 className="text-3xl font-bold mb-3 ">Login to your account</h1>
+            <h1 className="text-3xl font-bold mb-3 ">Connectez-vous à votre compte</h1>
 
             <form
               action=""
@@ -62,7 +62,7 @@ const Login = () => {
                 />
               </label>
               <label className="flex flex-col">
-                Password
+                Mot de passe
                 <input
                   type="password"
                   className="border rounded-md p-1.5 shadow-sm"
@@ -84,7 +84,7 @@ const Login = () => {
                     !loginCredentials.password
                   }
                 >
-                  {loggingIn ? "Logging In..." : "Login"}
+                  {loggingIn ? "Connexion en cours.." : "Connexion"}
                 </button>
                 <button
                   className="btn-secondary w-2/3 text-sm md:text-base text-center"
@@ -96,10 +96,10 @@ const Login = () => {
                     });
                   }}
                 >
-                  Login as a Guest
+                  Connexion en tant qu'invité
                 </button>
                 <Link to="/signup" className="underline text-gray-600">
-                  Create New Account
+                  Créér un compte
                 </Link>
               </div>
             </form>

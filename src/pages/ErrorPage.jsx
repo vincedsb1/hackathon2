@@ -10,7 +10,7 @@ const ErrorPage = () => {
         className="w-full xs:w-[80%] sm:w-1/2"
       />
       <span className="mt-3 font-sans text-2xl md:text-4xl font-bold uppercase  tracking-wide text-gray-300">
-        Nothing Here!
+        Oops, il n'y a rien à voir ici !
       </span>
     </div>
   );

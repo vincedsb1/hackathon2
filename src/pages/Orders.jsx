@@ -25,10 +25,10 @@ const Orders = () => {
           />
         </div>
         <p className="text-3xl py-2 font-semibold text-gray-700">
-          Order Successful
+          Commande réussie
         </p>
         <p className="text-sm text-gray-400">
-          Thank you for ordering with us :)
+          Merci pour votre confiance, votre commande a été enregistrée avec succès :)
         </p>
       </div>
     </div>

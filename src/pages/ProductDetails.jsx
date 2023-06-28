@@ -59,31 +59,31 @@ const ProductDetails = () => {
               <StarRating />
 
               <span className="text-xs text-gray-400">
-                ({product?.rating}) Rating
+                ({product?.rating}) Note
               </span>
             </div>
           </div>
 
           <div className="flex flex-col gap-2  ">
-            <h2 className="  text-lg font-semibold">About Product</h2>
+            <h2 className="  text-lg font-semibold">À propos du produit</h2>
             <ul className="flex gap-5">
               <div>
                 <li>
-                  <span className="text-gray-500 text-sm">Brand: </span>
+                  <span className="text-gray-500 text-sm">Marque: </span>
                   {product?.brand}
                 </li>
                 <li>
-                  <span className="text-gray-500 text-sm">Category: </span>
+                  <span className="text-gray-500 text-sm">Catégorie: </span>
                   {product?.category}
                 </li>
               </div>
               <div>
                 <li>
-                  <span className="text-gray-500 text-sm">Gender: </span>
+                  <span className="text-gray-500 text-sm">Type: </span>
                   {product?.gender}
                 </li>
                 <li>
-                  <span className="text-gray-500 text-sm">Heavy: </span>
+                  <span className="text-gray-500 text-sm">Poids: </span>
                   {product?.weight}
                 </li>
               </div>
@@ -91,12 +91,12 @@ const ProductDetails = () => {
           </div>
 
           <div className="flex gap-2 items-center pb-10 sm:pb-0">
-            Price:
+            Prix:
             <span className="ms-1 text-xl sm:text-2xl text-amber-600">
-              ₹{product?.newPrice}
+              {product?.newPrice}€
             </span>
             <span className="text-sm text-gray-600 line-through">
-              ₹{product?.price}
+              {product?.price}€
             </span>
           </div>
 
@@ -107,7 +107,7 @@ const ProductDetails = () => {
               onClick={() => {
                 if (!token) {
                   navigate("/login", { state: { from: location.pathname } });
-                  notify("warn", "Please Login to continue");
+                  notify("warn", "Connectez-vous pour continuer");
                 } else {
                   if (!product?.inCart) {
                     addProductToCart(product);
@@ -118,7 +118,7 @@ const ProductDetails = () => {
               }}
             >
               <HiOutlineShoppingBag />{" "}
-              {product?.inCart ? "Go to Bag" : "Add to Bag"}
+              {product?.inCart ? "Aller au panier" : "Ajouter au panier"}
             </button>
 
             <button
@@ -127,7 +127,7 @@ const ProductDetails = () => {
               onClick={() => {
                 if (!token) {
                   navigate("/login", { state: { from: location.pathname } });
-                  notify("warn", "Please Login to continue");
+                  notify("warn", "Connectez-vous pour continuer");
                 } else {
                   if (product?.inWish) {
                     deleteProductFromWishlist(product._id);
@@ -140,12 +140,12 @@ const ProductDetails = () => {
               {product?.inWish ? (
                 <>
                   <BsFillBookmarkHeartFill />
-                  <span>Remove from Wishlist</span>
+                  <span>Retirer de la Wishlist</span>
                 </>
               ) : (
                 <>
                   {" "}
-                  <BsBookmarkHeart /> <span>Wishlist Item</span>
+                  <BsBookmarkHeart /> <span>Articles en Wishlist</span>
                 </>
               )}{" "}
             </button>

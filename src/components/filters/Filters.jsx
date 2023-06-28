@@ -33,7 +33,7 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
         className="py-0.5 px-2 w-16 text-center bg-black/[0.2]  text-sm font-semibold shadow-sm rounded-md hover:bg-gray-800 hover:text-white transition-colors "
         onClick={clearFilters}
       >
-        Clear
+        Vider
       </button>
       <section className="py-3">
         <FilterHeading text="Gender" />
@@ -44,11 +44,11 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
         </div>
       </section>
       <section className="py-3">
-        <FilterHeading text="Price Range" />
+        <FilterHeading text="Prix" />
         <InputRange />
       </section>
       <section className="py-3">
-        <FilterHeading text="Categories" />
+        <FilterHeading text="Catégories" />
         <div className="flex flex-col gap-2">
           {checkboxCategories.map((data, index) => (
             <Checkbox data={data} key={index} />
@@ -57,7 +57,7 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
       </section>
 
       <section className="py-3 flex flex-col gap-2">
-        <FilterHeading text="Rating" />
+        <FilterHeading text="Note" />
         {ratings.map((data, index) => (
           <InputRadio data={data} key={index} name="rating" />
         ))}
