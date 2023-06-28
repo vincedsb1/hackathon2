@@ -1,6 +1,6 @@
 import { BsArrowDownRightCircle } from "react-icons/bs";
 
-import bannerImg from "../../assets/bannerImg.png";
+import bannerImg from "../../assets/bannerImg.gif";
 import { useNavigate } from "react-router";
 
 const Banner = ({ catRef }) => {

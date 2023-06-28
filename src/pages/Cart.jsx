@@ -12,7 +12,7 @@ const Cart = () => {
   return (
     <div className="py-2 ">
       {cart.length > 0 && (
-        <h1 className="text-2xl font-bold p-3 ">Bag({cart.length})</h1>
+        <h1 className="text-2xl font-bold p-3 ">Panier({cart.length})</h1>
       )}
       {cart.length ? (
         <div className="md:grid md:grid-cols-3 gap-5">
@@ -31,9 +31,9 @@ const Cart = () => {
             className="h-36 -rotate-12 mt-5 drop-shadow-lg"
           />
           <div className="text-center">
-            <h2 className="text-2xl font-bold">Hey, it feels so light!</h2>
+            <h2 className="text-2xl font-bold">Hey, c'est si léger !</h2>
             <p className="text-sm text-gray-400">
-              There's nothing in your bag. Let's add some items.
+              Il n'y a rien dans votre panier. Ajoutons quelques articles.
             </p>
           </div>
 
@@ -41,7 +41,7 @@ const Cart = () => {
             className="btn-rounded-secondary text-sm mt-5"
             onClick={() => navigate("/products")}
           >
-            Explore
+            Découvrir nos produits
           </button>
         </div>
       )}

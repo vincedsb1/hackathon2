@@ -28,10 +28,10 @@ const Wishlist = () => {
             className="w-full xs:w-1/2 sm:w-1/3"
           />
           <span className="font-sans text-xl  font-bold uppercase  tracking-wide text-gray-300">
-            Nothing to Show!
+            Rien à montrer !
           </span>
           <p className="text-gray-400">
-            Unlock Your Shopping Desires: Fill Your Empty Wishlist
+            Remplissez votre wishlist avec des articles que vous aimez !
           </p>
         </div>
       )}
