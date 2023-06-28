@@ -12,7 +12,7 @@ const MenuDropdown = ({ navigate }) => {
         </li>
         <li onClick={() => navigate("/cart")}>
           <span className="flex items-center px-5 py-3 hover:bg-amber-100 ">
-            <HiOutlineShoppingBag className="text-lg me-3" /> Bag
+            <HiOutlineShoppingBag className="text-lg me-3" /> Panier
           </span>
         </li>
       </ul>

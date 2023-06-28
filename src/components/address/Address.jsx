@@ -26,7 +26,7 @@ const Address = ({ isEdit }) => {
               setEditAddress(false);
             }}
           >
-            + Add New Address
+            + Ajouter une adresse
           </button>
         </div>
       )}

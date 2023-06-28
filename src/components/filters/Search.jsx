@@ -82,7 +82,7 @@ const Search = () => {
             ))
           ) : (
             <li className="h-10 flex items-center justify-center">
-              No Item to show
+              Aucun produit trouvé
             </li>
           )}
         </ul>

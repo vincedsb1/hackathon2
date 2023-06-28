@@ -36,7 +36,7 @@ const AddressForm = ({ setShowAddressForm, editAddress, setEditAddress }) => {
     >
       <div className="flex gap-2 flex-wrap">
         <label className="flex flex-1 flex-col">
-          Full Name
+          Nom, Prénom
           <input
             required
             type="text"
@@ -48,7 +48,7 @@ const AddressForm = ({ setShowAddressForm, editAddress, setEditAddress }) => {
           />
         </label>
         <label className="flex flex-1 flex-col">
-          Mobile No.
+          Numéro de téléphone
           <input
             required
             type="number"
@@ -61,7 +61,7 @@ const AddressForm = ({ setShowAddressForm, editAddress, setEditAddress }) => {
         </label>
       </div>
       <label className="flex flex-col">
-        Flat, House no., Building
+        Type de logement : Appartement, Maison, etc.
         <input
           required
           type="text"
@@ -73,7 +73,7 @@ const AddressForm = ({ setShowAddressForm, editAddress, setEditAddress }) => {
         />
       </label>
       <label className="flex flex-col">
-        Area, Colony, Street
+        Type de voie : Rue, Avenue, Boulevard, etc.
         <input
           required
           type="text"
@@ -86,7 +86,7 @@ const AddressForm = ({ setShowAddressForm, editAddress, setEditAddress }) => {
       </label>
       <div className="flex gap-2 flex-wrap">
         <label className="flex flex-1 flex-col">
-          Town/City
+          Ville
           <input
             required
             type="text"
@@ -98,7 +98,7 @@ const AddressForm = ({ setShowAddressForm, editAddress, setEditAddress }) => {
           />
         </label>
         <label className="flex flex-1 flex-col">
-          Pin Code
+          Code postal
           <input
             required
             type="number"
@@ -152,13 +152,13 @@ const AddressForm = ({ setShowAddressForm, editAddress, setEditAddress }) => {
             }
           }}
         >
-          Cancel
+          Annuler
         </button>
         <button
           type="submit"
           className="btn-rounded-primary rounded-full flex items-center gap-2 text-sm"
         >
-          Save
+          Sauvegarder
         </button>
       </div>
     </form>

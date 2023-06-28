@@ -23,7 +23,7 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
     `}
     >
       <div className="flex items-center justify-between">
-        <h1 className="text-3xl font-bold">Filter Products</h1>
+        <h1 className="text-3xl font-bold">Filtrer les produits</h1>
         <AiOutlineClose
           className="text-xl cursor-pointer"
           onClick={() => setIsFilterOpen(!isFilterOpen)}
