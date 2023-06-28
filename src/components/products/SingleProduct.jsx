@@ -69,7 +69,7 @@ const SingleProduct = ({ product }) => {
             onClick={() => {
               if (!token) {
                 navigate("/login", { state: { from: location.pathname } });
-                notify("warn", "Please Login to continue");
+                notify("warn", "Connectez-vous pour continuer");
               } else {
                 if (!inCart) {
                   addProductToCart(product);
@@ -79,7 +79,7 @@ const SingleProduct = ({ product }) => {
               }
             }}
           >
-            {inCart ? "Go to Bag" : "Add to Bag"}
+            {inCart ? "Aller au panier" : "Ajouter au panier"}
           </button>
           <button
             disabled={disableWish}
@@ -87,7 +87,7 @@ const SingleProduct = ({ product }) => {
             onClick={() => {
               if (!token) {
                 navigate("/login", { state: { from: location.pathname } });
-                notify("warn", "Please Login to continue");
+                notify("warn", "Connectez-vous pour continuer");
               } else {
                 if (product?.inWish) {
                   deleteProductFromWishlist(product._id);

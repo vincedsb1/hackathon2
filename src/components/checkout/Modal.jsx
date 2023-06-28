@@ -101,7 +101,7 @@ const Modal = ({ showModal, setShowModal }) => {
                     {disableBtn ? (
                       <img src={spinningLoader} alt="" height={20} />
                     ) : (
-                      <span>Confirm Order</span>
+                      <span>Confirmer la commande</span>
                     )}
                   </button>
                 </div>

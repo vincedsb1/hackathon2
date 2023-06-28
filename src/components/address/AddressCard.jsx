@@ -48,13 +48,13 @@ const AddressCard = ({
                 setShowAddressForm(true);
               }}
             >
-              Edit
+              Modifier
             </button>
             <button
               className="text-red-600 font-bold"
               onClick={() => deleteAddress(id)}
             >
-              Remove
+              Retirer
             </button>
           </div>
         )}

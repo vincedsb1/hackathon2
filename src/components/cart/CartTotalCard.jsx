@@ -34,7 +34,7 @@ const CartTotalCard = ({ cart }) => {
             }, 100);
           }}
         >
-          Proceed to Checkout
+          Passer au paiement
         </button>
       </div>
     </section>
