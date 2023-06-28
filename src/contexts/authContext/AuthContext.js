@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 
 const AuthContextProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem("token"));
-  const [userInfo, setUserInfo] = useState(
+  const [userInfo] = useState(
     localStorage.getItem("userInfo")
       ? JSON.parse(localStorage.getItem("userInfo"))
       : null
@@ -30,7 +30,7 @@ const AuthContextProvider = ({ children }) => {
           JSON.stringify(response?.data?.createdUser)
         );
         setToken(response?.data?.encodedToken);
-        notify("success", "Signed Up Successfully!!");
+        notify("success", "Inscription effectuée avec succès !");
       }
     } catch (err) {
       console.log(err);
@@ -38,7 +38,7 @@ const AuthContextProvider = ({ children }) => {
         "error",
         err?.response?.data?.errors
           ? err?.response?.data?.errors[0]
-          : "Some Error Occurred!!"
+          : "Une erreur est survenue !"
       );
     } finally {
       setSigningUp(false);
@@ -49,15 +49,17 @@ const AuthContextProvider = ({ children }) => {
     setLoggingIn(true);
     try {
       const response = await loginService(email, password);
+      console.log(`Bonjour \n\n ${response?.data?.foundUser?.username}`);
       console.log({ response });
       if (response.status === 200 || response.status === 201) {
+        console.log(`Bonjour \n\n ${response?.data?.foundUser?.username}`);
         localStorage.setItem("token", response?.data?.encodedToken);
         localStorage.setItem(
           "userInfo",
           JSON.stringify(response?.data?.foundUser)
         );
         setToken(response?.data?.encodedToken);
-        notify("success", "Logged In Successfully!!");
+        notify("success", "Connexion effectuée avec succès !");
       }
     } catch (err) {
       console.log(err);
@@ -65,7 +67,7 @@ const AuthContextProvider = ({ children }) => {
         "error",
         err?.response?.data?.errors
           ? err?.response?.data?.errors[0]
-          : "Some Error Occurred!!"
+          : "Une erreur est survenue !"
       );
     } finally {
       setLoggingIn(false);
@@ -76,7 +78,7 @@ const AuthContextProvider = ({ children }) => {
     localStorage.removeItem("token");
     localStorage.removeItem("userInfo");
     setToken(null);
-    notify("info", "Logged out successfully!!", 100);
+    notify("info", "Déconnexion effectuée avec succès !", 100);
   };
   return (
     <AuthContext.Provider
