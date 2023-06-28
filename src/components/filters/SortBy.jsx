@@ -14,8 +14,8 @@ const SortBy = () => {
         className="w-max py-1 px-2 rounded-md cursor-pointer shadow-md   hover:shadow-lg "
         onChange={(e) => applyFilters("sortBy", e.target.value)}
       >
-        <option value="" selected disabled>
-          Sort By
+        <option value="" defaultValue="" disabled>
+          Sort By Price
         </option>
         <option value="low_to_high" className="">
           Low to High

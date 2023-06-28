@@ -6,19 +6,18 @@ import {
   useProductsContext,
   useWishlistContext,
 } from "../../contexts";
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
+import { notify } from "../../utils/utils";
 
-const SingleProduct = ({ product, fromWish }) => {
+const SingleProduct = ({ product }) => {
   const { token } = useAuthContext();
   const { isInCart } = useProductsContext();
   const { addProductToCart, disableCart } = useCartContext();
   const { addProductToWishlist, deleteProductFromWishlist, disableWish } =
     useWishlistContext();
   const navigate = useNavigate();
-  let inCart;
-  if (fromWish) {
-    inCart = isInCart(product._id);
-  }
+  const location = useLocation();
+  let inCart = isInCart(product._id);
 
   return (
     <div
@@ -69,9 +68,10 @@ const SingleProduct = ({ product, fromWish }) => {
             disabled={disableCart}
             onClick={() => {
               if (!token) {
-                navigate("/login");
+                navigate("/login", { state: { from: location.pathname } });
+                notify("warn", "Please Login to continue");
               } else {
-                if (!product?.inCart || !inCart) {
+                if (!inCart) {
                   addProductToCart(product);
                 } else {
                   navigate("/cart");
@@ -79,16 +79,21 @@ const SingleProduct = ({ product, fromWish }) => {
               }
             }}
           >
-            {product?.inCart || inCart ? "Go to Bag" : "Add to Bag"}
+            {inCart ? "Go to Bag" : "Add to Bag"}
           </button>
           <button
             disabled={disableWish}
             className="disabled:cursor-not-allowed"
             onClick={() => {
-              if (product?.inWish) {
-                deleteProductFromWishlist(product._id);
+              if (!token) {
+                navigate("/login", { state: { from: location.pathname } });
+                notify("warn", "Please Login to continue");
               } else {
-                addProductToWishlist(product);
+                if (product?.inWish) {
+                  deleteProductFromWishlist(product._id);
+                } else {
+                  addProductToWishlist(product);
+                }
               }
             }}
           >

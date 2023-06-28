@@ -19,7 +19,7 @@ const AddressForm = ({ setShowAddressForm, editAddress, setEditAddress }) => {
   );
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log({ newAddress });
+
     if (editAddress) {
       updateAddress(newAddress.id, newAddress);
     } else {
@@ -111,10 +111,32 @@ const AddressForm = ({ setShowAddressForm, editAddress, setEditAddress }) => {
         </label>
       </div>
 
-      <div className="flex gap-3 mt-3">
+      <div className="flex gap-3 mt-3 flex-wrap">
+        {!editAddress && (
+          <button
+            type="button"
+            className="btn-rounded-secondary rounded-full flex items-center gap-2 text-sm p-1"
+            onClick={() => {
+              setNewAddress({
+                id: uuid(),
+                fullname: "Naruto Uzumaki",
+                mobile: "2134567890",
+                flat: "9, 100, uzumaki aparts",
+                area: "Hokage rock",
+                city: "Konohagakure",
+                pincode: "090909",
+              });
+              if (editAddress) {
+                setEditAddress(null);
+              }
+            }}
+          >
+            Fill dummy values
+          </button>
+        )}
         <button
           type="button"
-          className="btn-rounded-secondary rounded-full flex items-center gap-2 md:text-sm lg:text-base"
+          className="btn-rounded-secondary rounded-full flex items-center gap-2 text-sm"
           onClick={() => {
             setShowAddressForm(false);
             setNewAddress({
@@ -134,7 +156,7 @@ const AddressForm = ({ setShowAddressForm, editAddress, setEditAddress }) => {
         </button>
         <button
           type="submit"
-          className="btn-rounded-primary rounded-full flex items-center gap-2 md:text-sm lg:text-base"
+          className="btn-rounded-primary rounded-full flex items-center gap-2 text-sm"
         >
           Save
         </button>

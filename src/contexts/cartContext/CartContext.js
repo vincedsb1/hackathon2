@@ -26,7 +26,7 @@ const CartContextProvider = ({ children }) => {
       (async () => {
         try {
           const cartRes = await getCartItemsService(token);
-          console.log({ cartRes });
+
           if (cartRes.status === 200) {
             dispatch({
               type: actionTypes.INITIALIZE_CART,
@@ -39,7 +39,7 @@ const CartContextProvider = ({ children }) => {
             "error",
             err?.response?.data?.errors
               ? err?.response?.data?.errors[0]
-              : "Some Error Occurred!!"
+              : err?.response?.data?.message
           );
         } finally {
           setLoadingCart(false);
@@ -154,11 +154,11 @@ const CartContextProvider = ({ children }) => {
       try {
         const response = await deleteProductFromCartService(_id, token);
         if (response.status === 200 || response.status === 201) {
-          dispatch({
-            type: actionTypes.DELETE_PRODUCTS_FROM_CART,
-            payload: response.data.cart,
-          });
         }
+        dispatch({
+          type: actionTypes.DELETE_PRODUCTS_FROM_CART,
+          payload: [],
+        });
       } catch (err) {
         console.log(err);
         notify(

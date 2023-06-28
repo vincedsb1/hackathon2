@@ -40,7 +40,7 @@ export const products = [
     name: "Ardor Avaitor",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    brand: "Brand 1",
+    brand: "Ray-Ban",
     category: "Sports",
     gender: "Men",
     weight: "200g",
@@ -57,7 +57,7 @@ export const products = [
     name: "Caper Active",
     description:
       "Pellentesque ac tortor sed ipsum feugiat condimentum.Pellentesque ac tortor sed ipsum feugiat condimentum.",
-    brand: "Brand 2",
+    brand: "Persol",
     category: "Sports",
     gender: "Men",
     weight: "100g",
@@ -74,7 +74,7 @@ export const products = [
     name: "Alder Street",
     description:
       "Integer et nunc in turpis maximus facilisis ac ac elit.Integer et nunc in turpis maximus facilisis ac ac elit.",
-    brand: "Brand 3",
+    brand: "Kate Spade",
     category: "Sports",
     gender: "Unisex",
     weight: "750g",
@@ -83,6 +83,7 @@ export const products = [
     rating: 4.7,
     price: 2999,
     newPrice: 2000,
+    trending: true,
   },
   {
     _id: "fd25068a-9647-45ba-b44d-c8af1523148a",
@@ -90,7 +91,7 @@ export const products = [
     name: "Corral Round",
     description:
       "Vestibulum eu tellus sed lorem tristique lacinia ut vel urna. Vestibulum eu tellus sed lorem tristique lacinia ut vel urna.",
-    brand: "Brand 4",
+    brand: "Carrera",
     category: "Sports",
     gender: "Unisex",
     weight: "300g",
@@ -106,7 +107,7 @@ export const products = [
     name: "Hyperclax Active",
     description:
       "Aenean at velit consequat, faucibus mi id, tempor velit. Aenean at velit consequat, faucibus mi id, tempor velit.",
-    brand: "Brand 5",
+    brand: "Oakley",
     category: "Sports",
     gender: "Women",
     weight: "900g",
@@ -122,7 +123,7 @@ export const products = [
     name: "Rose Gold Chase",
     description:
       "Vivamus mattis quam sed libero pretium ullamcorper. Vivamus mattis quam sed libero pretium ullamcorper.",
-    brand: "Brand 1",
+    brand: "Ray-Ban",
     category: "Vision",
     gender: "Women",
     weight: "120g",
@@ -138,7 +139,7 @@ export const products = [
     name: "Full Rim Airflex",
     description:
       "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Brand 4",
+    brand: "Carrera",
     category: "Vision",
     gender: "Unisex",
     weight: "550g",
@@ -154,7 +155,7 @@ export const products = [
     name: "Mercury Rounded Red",
     description:
       "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Brand 4",
+    brand: "Carrera",
     category: "Vision",
     gender: "Unisex",
     weight: "550g",
@@ -170,7 +171,7 @@ export const products = [
     name: "Candyfloss-302",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    brand: "Brand 1",
+    brand: "Ray-Ban",
     category: "Sunglasses",
     gender: "Men",
     weight: "200g",
@@ -186,7 +187,7 @@ export const products = [
     name: "Phenomenal Mercury-02",
     description:
       "Pellentesque ac tortor sed ipsum feugiat condimentum. Pellentesque ac tortor sed ipsum feugiat condimentum.",
-    brand: "Brand 2",
+    brand: "Persol",
     category: "Sunglasses",
     gender: "Unisex",
     weight: "100g",
@@ -202,7 +203,7 @@ export const products = [
     name: "Black boss",
     description:
       "Integer et nunc in turpis maximus facilisis ac ac elit. Integer et nunc in turpis maximus facilisis ac ac elit.",
-    brand: "Brand 3",
+    brand: "Kate Spade",
     category: "Sunglasses",
     gender: "Unisex",
     weight: "750g",
@@ -219,7 +220,7 @@ export const products = [
     name: "Blue Ray Wayfarer",
     description:
       "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Brand 4",
+    brand: "Carrera",
     category: "Sports",
     gender: "Unisex",
     weight: "550g",
@@ -235,7 +236,7 @@ export const products = [
     name: "Pernik",
     description:
       "Vestibulum eu tellus sed lorem tristique lacinia ut vel urna. Vestibulum eu tellus sed lorem tristique lacinia ut vel urna.",
-    brand: "Brand 4",
+    brand: "Carrera",
     category: "Sunglasses",
     gender: "Unisex",
     weight: "300g",
@@ -251,7 +252,7 @@ export const products = [
     name: "Silistra",
     description:
       "Aenean at velit consequat, faucibus mi id, tempor velit. Aenean at velit consequat, faucibus mi id, tempor velit.",
-    brand: "Brand 5",
+    brand: "Oakley",
     category: "Sunglasses",
     gender: "Women",
     weight: "900g",
@@ -267,7 +268,7 @@ export const products = [
     name: "Full rim acetate black",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    brand: "Brand 1",
+    brand: "Ray-Ban",
     category: "Vision",
     gender: "Men",
     weight: "200g",
@@ -283,7 +284,7 @@ export const products = [
     name: "Ruse",
     description:
       "Fusce sed est nec ipsum convallis semper nec id ipsum. Fusce sed est nec ipsum convallis semper nec id ipsum.",
-    brand: "Brand 3",
+    brand: "Kate Spade",
     category: "Sunglasses",
     gender: "Men",
     weight: "400g",
@@ -299,7 +300,7 @@ export const products = [
     name: "Yambol",
     description:
       "Vivamus mattis quam sed libero pretium ullamcorper. Vivamus mattis quam sed libero pretium ullamcorper.",
-    brand: "Brand 1",
+    brand: "Ray-Ban",
     category: "Sunglasses",
     gender: "Men",
     weight: "130g",
@@ -315,7 +316,7 @@ export const products = [
     name: "Roadies Rd-202",
     description:
       "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Brand 4",
+    brand: "Carrera",
     category: "Sunglasses",
     gender: "Men",
     weight: "550g",
@@ -331,7 +332,7 @@ export const products = [
     name: "Burgas",
     description:
       "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Brand 4",
+    brand: "Carrera",
     category: "Sunglasses",
     gender: "Women",
     weight: "550g",
@@ -347,7 +348,7 @@ export const products = [
     name: "Hip Hop Candy",
     description:
       "Fusce sed est nec ipsum convallis semper nec id ipsum. Fusce sed est nec ipsum convallis semper nec id ipsum.",
-    brand: "Brand 3",
+    brand: "Kate Spade",
     category: "Sports",
     gender: "Men",
     weight: "400g",
@@ -364,7 +365,7 @@ export const products = [
     name: "Punk Cut Out",
     description:
       "Vivamus mattis quam sed libero pretium ullamcorper. Vivamus mattis quam sed libero pretium ullamcorper.",
-    brand: "Brand 1",
+    brand: "Ray-Ban",
     category: "Sports",
     gender: "Women",
     weight: "102g",
@@ -381,7 +382,7 @@ export const products = [
     name: "Rounded Gold",
     description:
       "Pellentesque ac tortor sed ipsum feugiat condimentum. Pellentesque ac tortor sed ipsum feugiat condimentum.",
-    brand: "Brand 2",
+    brand: "Persol",
     category: "Vision",
     gender: "Men",
     weight: "190g",
@@ -390,6 +391,7 @@ export const products = [
     rating: 2.8,
     price: 1299,
     newPrice: 1000,
+    trending: true,
   },
   {
     _id: "35332c85-f853-407a-80f8-840069381a0d",
@@ -397,7 +399,7 @@ export const products = [
     name: "Jungle Safari",
     description:
       "Integer et nunc in turpis maximus facilisis ac ac elit. Integer et nunc in turpis maximus facilisis ac ac elit.",
-    brand: "Brand 3",
+    brand: "Kate Spade",
     category: "Vision",
     gender: "Unisex",
     weight: "750g",
@@ -413,7 +415,7 @@ export const products = [
     name: "Burgas",
     description:
       "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Brand 4",
+    brand: "Carrera",
     category: "Sunglasses",
     gender: "Women",
     weight: "550g",
@@ -429,7 +431,7 @@ export const products = [
     name: "Sofia",
     description:
       "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Brand 4",
+    brand: "Carrera",
     category: "Sunglasses",
     gender: "Women",
     weight: "550g",
@@ -445,7 +447,7 @@ export const products = [
     name: "Plovediv",
     description:
       "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Brand 4",
+    brand: "Carrera",
     category: "Sunglasses",
     gender: "Unisex",
     weight: "550g",
@@ -461,7 +463,7 @@ export const products = [
     name: "Airway Black",
     description:
       "Vestibulum eu tellus sed lorem tristique lacinia ut vel urna. Vestibulum eu tellus sed lorem tristique lacinia ut vel urna.",
-    brand: "Brand 4",
+    brand: "Carrera",
     category: "Vision",
     gender: "Unisex",
     weight: "300g",
@@ -477,7 +479,7 @@ export const products = [
     name: "Cat-eyed Gold",
     description:
       "Aenean at velit consequat, faucibus mi id, tempor velit. Aenean at velit consequat, faucibus mi id, tempor velit.",
-    brand: "Brand 5",
+    brand: "Oakley",
     category: "Vision",
     gender: "Women",
     weight: "900g",
@@ -493,7 +495,7 @@ export const products = [
     name: "Full Rim Steel Gray",
     description:
       "Fusce sed est nec ipsum convallis semper nec id ipsum. Fusce sed est nec ipsum convallis semper nec id ipsum.",
-    brand: "Brand 3",
+    brand: "Kate Spade",
     category: "Vision",
     gender: "Men",
     weight: "400g",

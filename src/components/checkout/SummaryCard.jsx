@@ -1,8 +1,10 @@
 import React from "react";
-import { useCartContext } from "../../contexts";
+import { useCartContext, useProductsContext } from "../../contexts";
 import PriceDetailsCard from "./PriceDetailsCard";
+import { notify } from "../../utils/utils";
 
 const SummaryCard = ({ setShowModal }) => {
+  const { addressList, currentAddress } = useProductsContext();
   const { cart, totalPriceOfCartProducts, actualPriceOfCart } =
     useCartContext();
   const totalItems = cart.reduce((acc, { qty }) => acc + qty, 0);
@@ -12,7 +14,10 @@ const SummaryCard = ({ setShowModal }) => {
       <h1 className="text-2xl font-bold">Order Summary</h1>
 
       {cart.map((item) => (
-        <div className="flex flex-col gap-2 shadow-sm px-4 py-2 rounded-sm ">
+        <div
+          className="flex flex-col gap-2 shadow-sm px-4 py-2 rounded-sm "
+          key={item._id}
+        >
           <div className="flex  items-center flex-wrap gap-2 w-full">
             <div className="flex flex-1 items-center gap-2">
               <div className=" bg-black/[0.075] h-16 w-16 rounded-md flex items-center">
@@ -46,7 +51,16 @@ const SummaryCard = ({ setShowModal }) => {
 
       <div className="w-full py-2   flex gap-4 items-center">
         <button
-          onClick={() => setShowModal(true)}
+          onClick={() => {
+            if (
+              addressList.length === 0 ||
+              Object.keys(currentAddress).length === 0
+            ) {
+              notify("warn", "Please Select or Add an Address.");
+            } else {
+              setShowModal(true);
+            }
+          }}
           className="btn-rounded-primary rounded-full flex items-center gap-2 md:text-sm lg:text-base"
         >
           Place Order

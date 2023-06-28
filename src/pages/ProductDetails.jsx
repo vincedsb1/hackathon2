@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { BsBookmarkHeart, BsFillBookmarkHeartFill } from "react-icons/bs";
 
@@ -11,9 +11,11 @@ import {
 } from "../contexts";
 import { getProductByIdService } from "../api/apiServices";
 import { StarRating } from "../components";
+import { notify } from "../utils/utils";
 
 const ProductDetails = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { productId } = useParams();
   const { token } = useAuthContext();
   const { getProductById, allProducts } = useProductsContext();
@@ -35,8 +37,6 @@ const ProductDetails = () => {
       }
     })();
   }, [allProducts]);
-  const fixedButtonStyles =
-    "justify-center mt-3 fixed bottom-0  bg-[--theme-color] left-0 right-0";
 
   return (
     <div className="md:min-h-[80vh] flex justify-center items-center pt-5 sm:pt-3 pb-2 relative">
@@ -100,15 +100,14 @@ const ProductDetails = () => {
             </span>
           </div>
 
-          <div
-            className={`w-full   flex gap-4 items-center   flex-wrap  ${fixedButtonStyles} sm:relative sm:justify-start sm:bg-transparent`}
-          >
+          <div className={`w-full   flex gap-4 items-center   flex-wrap  `}>
             <button
               className="btn-rounded-secondary flex items-center gap-2 text-sm disabled:cursor-not-allowed"
               disabled={disableCart}
               onClick={() => {
                 if (!token) {
-                  navigate("/login");
+                  navigate("/login", { state: { from: location.pathname } });
+                  notify("warn", "Please Login to continue");
                 } else {
                   if (!product?.inCart) {
                     addProductToCart(product);
@@ -126,10 +125,15 @@ const ProductDetails = () => {
               className="btn-rounded-primary rounded-full flex items-center gap-2 text-sm disabled:cursor-not-allowed"
               disabled={disableWish}
               onClick={() => {
-                if (product?.inWish) {
-                  deleteProductFromWishlist(product._id);
+                if (!token) {
+                  navigate("/login", { state: { from: location.pathname } });
+                  notify("warn", "Please Login to continue");
                 } else {
-                  addProductToWishlist(product);
+                  if (product?.inWish) {
+                    deleteProductFromWishlist(product._id);
+                  } else {
+                    addProductToWishlist(product);
+                  }
                 }
               }}
             >

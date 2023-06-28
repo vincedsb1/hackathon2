@@ -1,24 +1,77 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { AiOutlineClose } from "react-icons/ai";
 import spinningLoader from "../../assets/spinning-circles.svg";
 import OrderSummary from "./OrderSummary";
-import { useCartContext } from "../../contexts";
+import { useAuthContext, useCartContext } from "../../contexts";
+import appLogo from "../../assets/thugGlasses.png";
+import { useNavigate } from "react-router";
 
-const Modal = ({ showModal, setShowModal, setIsOrderPlaced }) => {
-  const { clearCart, cart } = useCartContext();
+const Modal = ({ showModal, setShowModal }) => {
+  const { userInfo } = useAuthContext();
+  const { clearCart, totalPriceOfCartProducts } = useCartContext();
   const [disableBtn, setDisableBtn] = useState(false);
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    if (cart.length === 0) {
-      setIsOrderPlaced(true);
-      setShowModal(false);
-      setDisableBtn(false);
-    }
-  }, [cart]);
   const clickHandler = () => {
     setDisableBtn(true);
-    clearCart();
+    setTimeout(() => {
+      setShowModal(false);
+      setDisableBtn(false);
+      displayRazorpay();
+    }, 1000);
+  };
+  const loadScript = async (url) => {
+    return new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = url;
+
+      script.onload = () => {
+        resolve(true);
+      };
+
+      script.onerror = () => {
+        resolve(false);
+      };
+
+      document.body.appendChild(script);
+    });
+  };
+
+  const displayRazorpay = async () => {
+    const res = await loadScript(
+      "https://checkout.razorpay.com/v1/checkout.js"
+    );
+
+    if (!res) {
+      console.log("Razorpay SDK failed to load, check you connection", "error");
+      return;
+    }
+
+    const options = {
+      key: "rzp_test_H2lv7MTHG3JATn",
+      amount: totalPriceOfCartProducts * 100,
+      currency: "INR",
+      name: "Eyesome",
+      description: "Be awesome with eyesome :)",
+      image: appLogo,
+      handler: function () {
+        clearCart();
+        navigate("/orders", {
+          state: "orderSuccess",
+        });
+      },
+      prefill: {
+        name: userInfo ? userInfo.username : "Test",
+        email: userInfo ? userInfo.email : "abc@gmail.com",
+        contact: "9833445762",
+      },
+      theme: {
+        color: "#f9ca24",
+      },
+    };
+    const paymentObject = new window.Razorpay(options);
+    paymentObject.open();
   };
 
   return (
@@ -40,7 +93,7 @@ const Modal = ({ showModal, setShowModal, setIsOrderPlaced }) => {
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                   <button
                     disabled={disableBtn}
-                    className="btn-rounded-primary w-1/2  text-sm ease-linear transition-all duration-150 h-10 flex justify-center
+                    className="btn-rounded-primary w-1/2  text-sm ease-linear transition-all duration-150 h-10 flex justify-center items-center
                     disabled:cursor-wait"
                     type="button"
                     onClick={clickHandler}
