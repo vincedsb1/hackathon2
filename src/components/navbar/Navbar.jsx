@@ -66,7 +66,7 @@ const Navbar = () => {
             to="/products"
             className="mx-2 px-3 py-1 shadow-sm rounded-md text-white bg-yellow-700 text-sm hover:bg-yellow-800 transition"
           >
-            <span className="hidden xs:block">Explore</span>{" "}
+            <span className="hidden xs:block">Nos produits</span>{" "}
             <MdOutlineExplore className="xs:hidden" />
           </Link>
           <ul className=" hidden md:flex justify-between text-2xl ps-1">

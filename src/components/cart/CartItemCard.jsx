@@ -78,7 +78,7 @@ const CartItemCard = ({ product, isSearch, setSearch }) => {
                     disabled={disableCart}
                     onClick={() => deleteProductFromCart(product._id)}
                   >
-                    Remove from Bag
+                    Retirer du panier
                   </button>
                   <button
                     className="disabled:cursor-not-allowed"

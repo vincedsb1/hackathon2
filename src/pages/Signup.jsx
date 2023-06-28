@@ -54,7 +54,7 @@ const Signup = () => {
         <section className="px-10 py-10 rounded-md shadow-md bg-white/[0.7] flex flex-col gap-6 w-full max-w-lg">
           <Logo />
           <div className="flex flex-col gap-2 ">
-            <h1 className="text-4xl font-bold mb-3">Sign up</h1>
+            <h1 className="text-4xl font-bold mb-3">Créer son compte</h1>
 
             <form
               action=""
@@ -65,7 +65,7 @@ const Signup = () => {
                 <input
                   type="text"
                   required
-                  placeholder="Username"
+                  placeholder="Pseudo"
                   className="border rounded-md p-1.5 shadow-sm"
                   value={userDetails.username}
                   onChange={(e) =>
@@ -88,7 +88,7 @@ const Signup = () => {
               <label className="flex flex-col relative">
                 <input
                   required
-                  placeholder="Password"
+                  placeholder="Mot de passe"
                   type={showPassword.password ? "text" : "password"}
                   className="border rounded-md p-1.5 shadow-sm"
                   value={userDetails.password}
@@ -115,7 +115,7 @@ const Signup = () => {
               <label className="flex flex-col relative">
                 <input
                   required
-                  placeholder="Confirm Password"
+                  placeholder="Confirmer le mot de passe"
                   type={showPassword.confirmPassword ? "text" : "password"}
                   className="border rounded-md p-1.5 shadow-sm"
                   value={confirmPassword}
@@ -137,15 +137,14 @@ const Signup = () => {
                   )}
                 </span>
                 <p
-                  className={`pt-1 ${
-                    userDetails.password &&
-                    confirmPassword &&
-                    userDetails.password !== confirmPassword
+                  className={`pt-1 ${userDetails.password &&
+                      confirmPassword &&
+                      userDetails.password !== confirmPassword
                       ? "visible text-red-600"
                       : "invisible"
-                  }`}
+                    }`}
                 >
-                  Password Mismatch
+                  Les deux mots de passe ne correspondent pas
                 </p>
               </label>
               <div className="w-full py-2   flex flex-col gap-4 items-center">
@@ -154,16 +153,16 @@ const Signup = () => {
                   className="btn-primary w-2/3 text-lg text-center"
                   disabled={isDisabled}
                 >
-                  {signingUp ? "Signing up..." : "Create Account"}
+                  {signingUp ? "Création du compte en cours..." : "Créer votre compte"}
                 </button>
                 <p className="text-gray-600 text-sm">
-                  Already have an account?{" "}
+                  Vous avez déjà un compte ?{" "}
                   <Link
                     to="/login"
                     className="underline text-base
             "
                   >
-                    Login
+                    Connexion
                   </Link>
                 </p>
               </div>
