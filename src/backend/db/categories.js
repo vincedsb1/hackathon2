@@ -10,23 +10,23 @@ import glassCategory3 from "../../assets/categories/sportsmod1.jpg";
 export const categories = [
   {
     _id: "ef1f52f6-4e35-4cd7-ad4a-0a9b52de894f",
-    categoryName: "vision",
+    categoryName: "All",
     description:
-      "Clear vision and stylish frames for a perfect blend of functionality and fashion",
+      "Découvrez notre sélection complète de téléphones avec une vision claire et un design élégant pour une combinaison parfaite de fonctionnalité et de style.",
     categoryImg: glassCategory1,
   },
   {
     _id: "937d27a0-51b7-4005-bb04-4f5f111eac90",
-    categoryName: "sports",
+    categoryName: "Android",
     description:
-      "Stay focused and perform at your best with our high-performance sports glasses.",
+      "Restez concentré et performez au mieux avec notre gamme de téléphones Android haute performance.",
     categoryImg: glassCategory3,
   },
   {
     _id: "1164f45b-1659-4631-88d7-47325bb21eff",
-    categoryName: "sunglasses",
+    categoryName: "IOS",
     description:
-      "Protect your eyes in style with our UV-protected sunglasses collection.",
+      "Protégez vos yeux avec style grâce à notre collection de téléphones iOS avec protection anti-UV.",
     categoryImg: glassCategory2,
   },
 ];
