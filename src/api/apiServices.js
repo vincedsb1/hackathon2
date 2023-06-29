@@ -6,10 +6,14 @@ import {
   SIGNUP_URL,
   WISHLIST_URL,
   CATEGORIES_URL,
+  BONJOUR,
 } from "./apiUrls";
 
 export const loginService = (email, password) =>
   axios.post(LOGIN_URL, { email, password });
+
+export const BonjourService = (email, password) =>
+  axios.post(BONJOUR, { email, password });
 
 export const signupService = (username, email, password) =>
   axios.post(SIGNUP_URL, { username, email, password });

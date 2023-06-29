@@ -3,6 +3,7 @@ const baseUrl = "/api";
 //auth url
 export const SIGNUP_URL = `${baseUrl}/auth/signup`;
 export const LOGIN_URL = `${baseUrl}/auth/login`;
+export const BONJOUR = `${baseUrl}/login`;
 
 //products url
 

@@ -11,6 +11,10 @@ const authRoutes = [
     path: "/signup",
     element: <Signup />,
   },
+  {
+    path: "/connexion",
+    element: <Signup />,
+  },
 ];
 
 const contentRoutes = [
