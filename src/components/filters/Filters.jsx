@@ -2,12 +2,14 @@ import { AiOutlineClose } from "react-icons/ai";
 import Checkbox from "./Checkbox";
 import InputRange from "./InputRange";
 import InputRadio from "./InputRadio";
-import InputRadioType2 from "./InputRadioType2";
+// import InputRadioType2 from "./InputRadioType2";
 import { useProductsContext } from "../../contexts";
 import {
   checkboxCategories,
-  gendersList,
+  // gendersList,
   ratings,
+  colorOptions,
+  ramOptions,
 } from "../../utils/constants";
 
 const FilterHeading = ({ text }) => <h2 className="text-xl mb-4">{text}</h2>;
@@ -17,9 +19,8 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
   return (
     <aside
       className={`filtersContainer fixed  top-0 h-screen z-10 flex flex-col p-3 gap-3 overflow-auto
-    transition-all ease-in-out duration-300  ${
-      isFilterOpen ? "left-0 " : "-left-96"
-    }
+    transition-all ease-in-out duration-300  ${isFilterOpen ? "left-0 " : "-left-96"
+        }
     `}
     >
       <div className="flex items-center justify-between">
@@ -35,14 +36,14 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
       >
         Vider
       </button>
-      <section className="py-3">
+      {/* <section className="py-3">
         <FilterHeading text="Gender" />
         <div className="grid grid-rows-2 grid-cols-2 gap-2">
           {gendersList.map((data, index) => (
             <InputRadioType2 data={data} key={index} />
           ))}
         </div>
-      </section>
+      </section> */}
       <section className="py-3">
         <FilterHeading text="Prix" />
         <InputRange />
@@ -56,11 +57,28 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
         </div>
       </section>
 
+
       <section className="py-3 flex flex-col gap-2">
-        <FilterHeading text="Note" />
+        <FilterHeading text="Capacité de stockage" />
         {ratings.map((data, index) => (
           <InputRadio data={data} key={index} name="rating" />
         ))}
+      </section>
+      <section className="py-3">
+        <FilterHeading text="Couleur" />
+        <div className="flex flex-col gap-2">
+          {colorOptions.map((color, index) => (
+            <Checkbox data={color} key={index} isRam={false} />
+          ))}
+        </div>
+      </section>
+      <section className="py-3">
+        <FilterHeading text="Mémoire RAM" />
+        <div className="flex flex-col gap-2">
+          {ramOptions.map((ram, index) => (
+            <Checkbox data={ram} key={index} isRam={true} />
+          ))}
+        </div>
       </section>
     </aside>
   );
