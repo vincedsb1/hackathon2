@@ -73,6 +73,9 @@ const AddProduct = () => {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen overflow-y-auto">
+            <div className="w-full max-w-3xl">
+                <p className="text-3xl font-medium p-6">Ajouter un nouveau smartphone</p>
+            </div>
         <form onSubmit={handleSubmit} className="w-full max-w-3xl bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div className="flex flex-row ">
             <div className="mb-4 pr-4 w-1/2">
