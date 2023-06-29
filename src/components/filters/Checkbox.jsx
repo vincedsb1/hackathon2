@@ -18,7 +18,7 @@ const Checkbox = ({ data, isRam }) => {
     applyFilters(e.target.name, catArr);
   };
 
-  const labelText = isRam ? `${data} RAM` : data;
+  const labelText = isRam ? `${data} Go` : data;
 
   return (
     <label className="capitalize cursor-pointer">

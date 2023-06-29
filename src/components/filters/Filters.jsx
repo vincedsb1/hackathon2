@@ -6,8 +6,8 @@ import InputRadio from "./InputRadio";
 import { useProductsContext } from "../../contexts";
 import {
   checkboxCategories,
-  // gendersList,
-  ratings,
+  gendersList,
+  // ratings,
   colorOptions,
   ramOptions,
 } from "../../utils/constants";
@@ -51,7 +51,7 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
         <InputRange />
       </section>
       <section className="py-3">
-        <FilterHeading text="Marques" />
+        <FilterHeading text="IOS" />
         <div className="flex flex-col gap-2">
           {checkboxCategories.map((data, index) => (
             <Checkbox data={data} key={index} />
@@ -62,8 +62,8 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
 
       <section className="py-3 flex flex-col gap-2">
         <FilterHeading text="Capacité de stockage" />
-        {ratings.map((data, index) => (
-          <InputRadio data={data} key={index} name="rating" />
+        {gendersList.map((data, index) => (
+          <InputRadio data={data} key={index} name="gendersList" />
         ))}
       </section>
       <section className="py-3">
