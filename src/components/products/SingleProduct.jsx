@@ -44,7 +44,7 @@ const SingleProduct = ({ product }) => {
                 <div>
                     <div className=" flex justify-between">
                         <div className="flex flex-col">
-                            <span className="text-xl font-medium">
+                            <span className="text-xl font-medium pb-6">
                                 {product.name}
                             </span>
                             <span className="flex items-center gap-1">
