@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { BsBookmarkHeart } from "react-icons/bs";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { MdOutlineExplore } from "react-icons/md";
+import { AiOutlinePlusCircle } from 'react-icons/ai';
 
 import { RxHamburgerMenu } from "react-icons/rx";
 import defaultUser from "../../assets/defaultUser.png";
@@ -57,8 +58,15 @@ const Navbar = () => {
 
                     <Logo />
                 </section>
-                <div className="hidden  sm:block sm:w-1/3 relative">
-                    <Search />
+                <div className="flex flex-row justify-end">
+                    <Link to="/addproduct">
+                    <div className="flex flex-row text-4xl text-green-500 items-center pr-2">
+                        <AiOutlinePlusCircle />
+                    </div>
+                    </Link>
+                    <div className="hidden w-60 sm:block relative">
+                        <Search />
+                    </div>
                 </div>
             </div>
 
