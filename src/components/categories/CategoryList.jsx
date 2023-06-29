@@ -9,7 +9,7 @@ const CategoryList = ({ catRef }) => {
         Catégories
       </h1>
       <section
-        className="grid  grid-cols-1  md:grid-cols-3    gap-4  py-4 mt-1"
+        className="grid  grid-cols-1  md:grid-cols-2    gap-4  py-4 mt-1"
         ref={catRef}
       >
         {categoryList.map((categoryItem) => (
