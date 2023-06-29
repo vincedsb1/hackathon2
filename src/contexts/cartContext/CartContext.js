@@ -64,7 +64,7 @@ const CartContextProvider = ({ children }) => {
           payload: [{ ...product, qty: 1 }, ...state.cart],
         });
         updateInCartOrInWish(product._id, "inCart", true);
-        notify("success", "Product Added to Bag");
+        notify("success", "Produit ajouté au panier avec succès");
       }
 
       console.log({ response });
