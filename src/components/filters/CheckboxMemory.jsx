@@ -1,13 +1,17 @@
 import { useProductsContext } from "../../contexts";
 
-const Checkbox = ({ data, isRam }) => {
+const CheckboxMemory = ({ data }) => {
     const {
         applyFilters,
-        filters: { categories },
+        filters: { memory },
     } = useProductsContext();
 
     const checkboxHandler = (e) => {
-        let catArr = categories;
+        let catArr = memory;
+
+        console.log("checkboxHandler");
+        console.log(e.target.value);
+        console.log(catArr);
 
         if (e.target.checked) {
             catArr.push(e.target.value);
@@ -15,18 +19,21 @@ const Checkbox = ({ data, isRam }) => {
             catArr = catArr.filter((cat) => cat !== e.target.value);
         }
 
-        applyFilters("categories", catArr);
+        console.log(catArr);
+        console.log(e.target.name);
+
+        applyFilters("memory", catArr);
     };
 
-    const labelText = isRam ? `${data} Go` : data;
+    const labelText = `${data} Go`;
 
     return (
         <label className="capitalize cursor-pointer">
             <input
                 className="accent-[--primary-text-color] me-2 cursor-pointer"
                 type="checkbox"
-                name="categories"
-                checked={categories.includes(data)}
+                name="memory"
+                checked={memory.includes(data)}
                 value={data}
                 onChange={checkboxHandler}
             />
@@ -35,4 +42,4 @@ const Checkbox = ({ data, isRam }) => {
     );
 };
 
-export default Checkbox;
+export default CheckboxMemory;
