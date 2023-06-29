@@ -242,7 +242,7 @@ export const products = [
     name: "iPhone 7",
     description:
       "Téléphone élégant avec une caméra améliorée de 12 MP et une résistance à l'eau.",
-    brand: "Kate Spade",
+    brand: "Apple",
     category: "ios",
     gender: "2",
     weight: "64",
@@ -274,7 +274,7 @@ export const products = [
     name: "iPhone 8",
     description:
       "Puissant iPhone avec une caméra de 12 MP et la capacité de recharge sans fil.",
-    brand: "Oakley",
+    brand: "Apple",
     category: "ios",
     gender: "2",
     weight: "128",
