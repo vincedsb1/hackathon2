@@ -36,7 +36,7 @@ const SingleProduct = ({ product }) => {
         <img
           src={product.image}
           alt=""
-          className="w-full object-cover xs:object-contain sm:object-cover max-w-[270px] h-80"
+          className="w-full object-cover xs:object-contain sm:object-cover max-w-[180px] max-h-44 h-80"
         />
       </div>
 
