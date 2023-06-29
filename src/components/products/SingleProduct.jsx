@@ -21,14 +21,14 @@ const SingleProduct = ({ product }) => {
 
   return (
     <div
-      className="flex flex-col xs:flex-row sm:flex-col  bg-white/[0.5] rounded-lg shadow-md border-2 border-black/[0.05] overflow-hidden
+      className="flex flex-row xs:flex-row sm:flex-row  bg-white/[0.5] rounded-lg shadow-md border-2 border-black/[0.05] overflow-hidden
       cursor-pointer
       transition-transform
       hover:scale-[1.02] hover:shadow-lg"
     >
       <div
         // className="flex items-center justify-center p-10 xs:p-5 sm:p-10 bg-black/[0.075] h-1/2 xs:h-full sm:h-1/2 xs:w-1/2 w-full sm:w-full"
-        className="flex items-center justify-center p-10 xs:p-5 sm:p-10 bg-black/[0.075]  xs:w-1/2 w-full sm:w-full"
+        className="flex items-center justify-center p-2 xs:p-5 sm:p-6 bg-black/[0.075]  xs:w-1/2 w-full sm:w-full"
         onClick={() => {
           navigate(`/product/${product._id}`);
         }}
@@ -36,7 +36,7 @@ const SingleProduct = ({ product }) => {
         <img
           src={product.image}
           alt=""
-          className="w-full object-cover xs:object-contain sm:object-cover h-28"
+          className="w-full object-cover xs:object-contain sm:object-cover max-w-[270px] h-80"
         />
       </div>
 
@@ -54,7 +54,7 @@ const SingleProduct = ({ product }) => {
             </div>
 
             <div className="flex flex-col items-end">
-              <span className="text-amber-600">₹{product.newPrice}</span>
+              <span className="text-amber-600">{product.newPrice} €</span>
               <span className="text-sm text-gray-600 line-through">
                 {product.price}
               </span>

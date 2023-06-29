@@ -1,33 +1,34 @@
-import sun3 from "../../assets/sunglasses/sun3.png";
-import sun4 from "../../assets/sunglasses/sun4.png";
-import sun5 from "../../assets/sunglasses/sun5.png";
-import sun7 from "../../assets/sunglasses/sun7.png";
-import sun8 from "../../assets/sunglasses/sun8.png";
-import sun9 from "../../assets/sunglasses/sun9.png";
-import sun10 from "../../assets/sunglasses/sun10.png";
-import sun11 from "../../assets/sunglasses/sun11.png";
-import sun12 from "../../assets/sunglasses/sun12.png";
-import sun13 from "../../assets/sunglasses/sun13.png";
-import sun14 from "../../assets/sunglasses/sun14.png";
+// import sun3 from "../../assets/sunglasses/sun3.png";
+// import sun4 from "../../assets/sunglasses/sun4.png";
+// import sun5 from "../../assets/sunglasses/sun5.png";
+// import sun7 from "../../assets/sunglasses/sun7.png";
+// import sun8 from "../../assets/sunglasses/sun8.png";
+// import sun9 from "../../assets/sunglasses/sun9.png";
+// import sun10 from "../../assets/sunglasses/sun10.png";
+// import sun11 from "../../assets/sunglasses/sun11.png";
+// import sun12 from "../../assets/sunglasses/sun12.png";
+// import sun13 from "../../assets/sunglasses/sun13.png";
+// import sun14 from "../../assets/sunglasses/sun14.png";
 
-import sports1 from "../../assets/sports/sports1.png";
-import sports2 from "../../assets/sports/sports2.png";
-import sports3 from "../../assets/sports/sports3.png";
-import sports4 from "../../assets/sports/sports4.png";
-import sports6 from "../../assets/sports/sports6.png";
-import sports7 from "../../assets/sports/sports7.png";
-import sports8 from "../../assets/sports/sports8.png";
-import sports9 from "../../assets/sports/sports9.png";
+import android1 from "../../assets/android/android1.png";
+import android2 from "../../assets/android/android2.png";
+import android3 from "../../assets/android/android3.png";
+import android4 from "../../assets/android/android4.png";
+// import android5 from "../../assets/android/android5.png";
+import android6 from "../../assets/android/android6.png";
+import android7 from "../../assets/android/android7.png";
+import android8 from "../../assets/android/android8.png";
+import android9 from "../../assets/android/android9.png";
 
-import vision1 from "../../assets/vision/vision1.png";
-import vision2 from "../../assets/vision/vision2.png";
-import vision3 from "../../assets/vision/vision3.png";
-import vision4 from "../../assets/vision/vision4.png";
-import vision5 from "../../assets/vision/vision5.png";
-import vision6 from "../../assets/vision/vision6.png";
-import vision7 from "../../assets/vision/vision7.png";
-import vision8 from "../../assets/vision/vision8.png";
-import vision9 from "../../assets/vision/vision9.png";
+import ios1 from "../../assets/ios/ios1.png";
+import ios2 from "../../assets/ios/ios2.png";
+import ios3 from "../../assets/ios/ios3.png";
+import ios4 from "../../assets/ios/ios4.png";
+import ios5 from "../../assets/ios/ios5.png";
+import ios6 from "../../assets/ios/ios6.png";
+import ios7 from "../../assets/ios/ios7.png";
+import ios8 from "../../assets/ios/ios8.png";
+import ios9 from "../../assets/ios/ios9.png";
 
 /**
  * Product Database can be added here.
@@ -41,11 +42,11 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     brand: "Ray-Ban",
-    category: "Sports",
+    category: "android",
     gender: "Men",
     weight: "200g",
     quantity: 10,
-    image: sports1,
+    image: android1,
     rating: 4.5,
     price: 1999,
     newPrice: 1899,
@@ -58,11 +59,11 @@ export const products = [
     description:
       "Pellentesque ac tortor sed ipsum feugiat condimentum.Pellentesque ac tortor sed ipsum feugiat condimentum.",
     brand: "Persol",
-    category: "Sports",
+    category: "android",
     gender: "Men",
     weight: "100g",
     quantity: 5,
-    image: sports2,
+    image: android2,
     rating: 4.8,
     price: 1299,
     newPrice: 1199,
@@ -75,11 +76,11 @@ export const products = [
     description:
       "Integer et nunc in turpis maximus facilisis ac ac elit.Integer et nunc in turpis maximus facilisis ac ac elit.",
     brand: "Kate Spade",
-    category: "Sports",
+    category: "android",
     gender: "Unisex",
     weight: "750g",
     quantity: 15,
-    image: sports3,
+    image: android3,
     rating: 4.7,
     price: 2999,
     newPrice: 2000,
@@ -92,11 +93,11 @@ export const products = [
     description:
       "Vestibulum eu tellus sed lorem tristique lacinia ut vel urna. Vestibulum eu tellus sed lorem tristique lacinia ut vel urna.",
     brand: "Carrera",
-    category: "Sports",
+    category: "android",
     gender: "Unisex",
     weight: "300g",
     quantity: 8,
-    image: sports4,
+    image: android4,
     rating: 3.8,
     price: 2499,
     newPrice: 2300,
@@ -108,11 +109,11 @@ export const products = [
     description:
       "Aenean at velit consequat, faucibus mi id, tempor velit. Aenean at velit consequat, faucibus mi id, tempor velit.",
     brand: "Oakley",
-    category: "Sports",
+    category: "android",
     gender: "Women",
     weight: "900g",
     quantity: 3,
-    image: sports6,
+    image: android6,
     rating: 3.5,
     price: 3999,
     newPrice: 3500,
@@ -124,11 +125,11 @@ export const products = [
     description:
       "Vivamus mattis quam sed libero pretium ullamcorper. Vivamus mattis quam sed libero pretium ullamcorper.",
     brand: "Ray-Ban",
-    category: "Vision",
+    category: "ios",
     gender: "Women",
     weight: "120g",
     quantity: 9,
-    image: vision7,
+    image: ios7,
     rating: 4.3,
     price: 2999,
     newPrice: 2599,
@@ -140,11 +141,11 @@ export const products = [
     description:
       "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
     brand: "Carrera",
-    category: "Vision",
+    category: "ios",
     gender: "Unisex",
     weight: "550g",
     quantity: 7,
-    image: vision8,
+    image: ios8,
     rating: 4.8,
     price: 4999,
     newPrice: 3999,
@@ -156,64 +157,64 @@ export const products = [
     description:
       "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
     brand: "Carrera",
-    category: "Vision",
+    category: "ios",
     gender: "Unisex",
     weight: "550g",
     quantity: 7,
-    image: vision9,
+    image: ios9,
     rating: 4.8,
     price: 4999,
     newPrice: 4300,
   },
-  {
-    _id: "c6dcde20-2e9f-470c-b76c-38b01ab7e16e",
-    qty: 0,
-    name: "Candyfloss-302",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    brand: "Ray-Ban",
-    category: "Sunglasses",
-    gender: "Men",
-    weight: "200g",
-    quantity: 10,
-    image: sun3,
-    rating: 4.5,
-    price: 1999,
-    newPrice: 1899,
-  },
-  {
-    _id: "c76b3840-47d2-4d38-b465-af68e2af9dcd",
-    qty: 0,
-    name: "Phenomenal Mercury-02",
-    description:
-      "Pellentesque ac tortor sed ipsum feugiat condimentum. Pellentesque ac tortor sed ipsum feugiat condimentum.",
-    brand: "Persol",
-    category: "Sunglasses",
-    gender: "Unisex",
-    weight: "100g",
-    quantity: 5,
-    image: sun4,
-    rating: 2.8,
-    price: 1299,
-    newPrice: 1200,
-  },
-  {
-    _id: "61bf1558-94c3-4494-a522-0aad46ed5334",
-    qty: 0,
-    name: "Black boss",
-    description:
-      "Integer et nunc in turpis maximus facilisis ac ac elit. Integer et nunc in turpis maximus facilisis ac ac elit.",
-    brand: "Kate Spade",
-    category: "Sunglasses",
-    gender: "Unisex",
-    weight: "750g",
-    quantity: 15,
-    image: sun5,
-    rating: 4.7,
-    price: 2999,
-    newPrice: 2399,
-    trending: true,
-  },
+  // {
+  //   _id: "c6dcde20-2e9f-470c-b76c-38b01ab7e16e",
+  //   qty: 0,
+  //   name: "Candyfloss-302",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   brand: "Ray-Ban",
+  //   category: "Sunglasses",
+  //   gender: "Men",
+  //   weight: "200g",
+  //   quantity: 10,
+  //   image: sun3,
+  //   rating: 4.5,
+  //   price: 1999,
+  //   newPrice: 1899,
+  // },
+  // {
+  //   _id: "c76b3840-47d2-4d38-b465-af68e2af9dcd",
+  //   qty: 0,
+  //   name: "Phenomenal Mercury-02",
+  //   description:
+  //     "Pellentesque ac tortor sed ipsum feugiat condimentum. Pellentesque ac tortor sed ipsum feugiat condimentum.",
+  //   brand: "Persol",
+  //   category: "Sunglasses",
+  //   gender: "Unisex",
+  //   weight: "100g",
+  //   quantity: 5,
+  //   image: sun4,
+  //   rating: 2.8,
+  //   price: 1299,
+  //   newPrice: 1200,
+  // },
+  // {
+  //   _id: "61bf1558-94c3-4494-a522-0aad46ed5334",
+  //   qty: 0,
+  //   name: "Black boss",
+  //   description:
+  //     "Integer et nunc in turpis maximus facilisis ac ac elit. Integer et nunc in turpis maximus facilisis ac ac elit.",
+  //   brand: "Kate Spade",
+  //   category: "Sunglasses",
+  //   gender: "Unisex",
+  //   weight: "750g",
+  //   quantity: 15,
+  //   image: sun5,
+  //   rating: 4.7,
+  //   price: 2999,
+  //   newPrice: 2399,
+  //   trending: true,
+  // },
   {
     _id: "9e3419eb-e5f6-4813-8bf4-6d72b6498235",
     qty: 0,
@@ -221,47 +222,47 @@ export const products = [
     description:
       "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
     brand: "Carrera",
-    category: "Sports",
+    category: "android",
     gender: "Unisex",
     weight: "550g",
     quantity: 7,
-    image: sports9,
+    image: android9,
     rating: 4.8,
     price: 4999,
     newPrice: 4000,
   },
-  {
-    _id: "c39a126c-783e-4926-bedd-0b2174307d9c",
-    qty: 0,
-    name: "Pernik",
-    description:
-      "Vestibulum eu tellus sed lorem tristique lacinia ut vel urna. Vestibulum eu tellus sed lorem tristique lacinia ut vel urna.",
-    brand: "Carrera",
-    category: "Sunglasses",
-    gender: "Unisex",
-    weight: "300g",
-    quantity: 8,
-    image: sun7,
-    rating: 3.8,
-    price: 2499,
-    newPrice: 1599,
-  },
-  {
-    _id: "2e792ac4-13a7-4d70-a9a5-55294e346404",
-    qty: 0,
-    name: "Silistra",
-    description:
-      "Aenean at velit consequat, faucibus mi id, tempor velit. Aenean at velit consequat, faucibus mi id, tempor velit.",
-    brand: "Oakley",
-    category: "Sunglasses",
-    gender: "Women",
-    weight: "900g",
-    quantity: 3,
-    image: sun8,
-    rating: 3.5,
-    price: 3999,
-    newPrice: 3599,
-  },
+  // {
+  //   _id: "c39a126c-783e-4926-bedd-0b2174307d9c",
+  //   qty: 0,
+  //   name: "Pernik",
+  //   description:
+  //     "Vestibulum eu tellus sed lorem tristique lacinia ut vel urna. Vestibulum eu tellus sed lorem tristique lacinia ut vel urna.",
+  //   brand: "Carrera",
+  //   category: "Sunglasses",
+  //   gender: "Unisex",
+  //   weight: "300g",
+  //   quantity: 8,
+  //   image: sun7,
+  //   rating: 3.8,
+  //   price: 2499,
+  //   newPrice: 1599,
+  // },
+  // {
+  //   _id: "2e792ac4-13a7-4d70-a9a5-55294e346404",
+  //   qty: 0,
+  //   name: "Silistra",
+  //   description:
+  //     "Aenean at velit consequat, faucibus mi id, tempor velit. Aenean at velit consequat, faucibus mi id, tempor velit.",
+  //   brand: "Oakley",
+  //   category: "Sunglasses",
+  //   gender: "Women",
+  //   weight: "900g",
+  //   quantity: 3,
+  //   image: sun8,
+  //   rating: 3.5,
+  //   price: 3999,
+  //   newPrice: 3599,
+  // },
   {
     _id: "a84d980e-cf9e-4607-b74d-68f7a1c45771",
     qty: 0,
@@ -269,79 +270,79 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     brand: "Ray-Ban",
-    category: "Vision",
+    category: "ios",
     gender: "Men",
     weight: "200g",
     quantity: 10,
-    image: vision1,
+    image: ios1,
     rating: 4.5,
     price: 1999,
     newPrice: 1900,
   },
-  {
-    _id: "1c9bd0c1-b300-4358-9eb4-43a70e392859",
-    qty: 0,
-    name: "Ruse",
-    description:
-      "Fusce sed est nec ipsum convallis semper nec id ipsum. Fusce sed est nec ipsum convallis semper nec id ipsum.",
-    brand: "Kate Spade",
-    category: "Sunglasses",
-    gender: "Men",
-    weight: "400g",
-    quantity: 6,
-    image: sun9,
-    rating: 4.1,
-    price: 1499,
-    newPrice: 1350,
-  },
-  {
-    _id: "08617c37-e290-4296-b558-2db509201361",
-    qty: 0,
-    name: "Yambol",
-    description:
-      "Vivamus mattis quam sed libero pretium ullamcorper. Vivamus mattis quam sed libero pretium ullamcorper.",
-    brand: "Ray-Ban",
-    category: "Sunglasses",
-    gender: "Men",
-    weight: "130g",
-    quantity: 9,
-    image: sun10,
-    rating: 4.3,
-    price: 2999,
-    newPrice: 1999,
-  },
-  {
-    _id: "5f73b408-aa98-4f54-a15b-7a7425a038d5",
-    qty: 0,
-    name: "Roadies Rd-202",
-    description:
-      "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Carrera",
-    category: "Sunglasses",
-    gender: "Men",
-    weight: "550g",
-    quantity: 7,
-    image: sun14,
-    rating: 4.8,
-    price: 4999,
-    newPrice: 4799,
-  },
-  {
-    _id: "bb2ad041-b53a-49a8-835d-e84300e6fbd2",
-    qty: 0,
-    name: "Burgas",
-    description:
-      "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Carrera",
-    category: "Sunglasses",
-    gender: "Women",
-    weight: "550g",
-    quantity: 7,
-    image: sun11,
-    rating: 4.8,
-    price: 4999,
-    newPrice: 4000,
-  },
+  // {
+  //   _id: "1c9bd0c1-b300-4358-9eb4-43a70e392859",
+  //   qty: 0,
+  //   name: "Ruse",
+  //   description:
+  //     "Fusce sed est nec ipsum convallis semper nec id ipsum. Fusce sed est nec ipsum convallis semper nec id ipsum.",
+  //   brand: "Kate Spade",
+  //   category: "Sunglasses",
+  //   gender: "Men",
+  //   weight: "400g",
+  //   quantity: 6,
+  //   image: sun9,
+  //   rating: 4.1,
+  //   price: 1499,
+  //   newPrice: 1350,
+  // },
+  // {
+  //   _id: "08617c37-e290-4296-b558-2db509201361",
+  //   qty: 0,
+  //   name: "Yambol",
+  //   description:
+  //     "Vivamus mattis quam sed libero pretium ullamcorper. Vivamus mattis quam sed libero pretium ullamcorper.",
+  //   brand: "Ray-Ban",
+  //   category: "Sunglasses",
+  //   gender: "Men",
+  //   weight: "130g",
+  //   quantity: 9,
+  //   image: sun10,
+  //   rating: 4.3,
+  //   price: 2999,
+  //   newPrice: 1999,
+  // },
+  // {
+  //   _id: "5f73b408-aa98-4f54-a15b-7a7425a038d5",
+  //   qty: 0,
+  //   name: "Roadies Rd-202",
+  //   description:
+  //     "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
+  //   brand: "Carrera",
+  //   category: "Sunglasses",
+  //   gender: "Men",
+  //   weight: "550g",
+  //   quantity: 7,
+  //   image: sun14,
+  //   rating: 4.8,
+  //   price: 4999,
+  //   newPrice: 4799,
+  // },
+  // {
+  //   _id: "bb2ad041-b53a-49a8-835d-e84300e6fbd2",
+  //   qty: 0,
+  //   name: "Burgas",
+  //   description:
+  //     "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
+  //   brand: "Carrera",
+  //   category: "Sunglasses",
+  //   gender: "Women",
+  //   weight: "550g",
+  //   quantity: 7,
+  //   image: sun11,
+  //   rating: 4.8,
+  //   price: 4999,
+  //   newPrice: 4000,
+  // },
   {
     _id: "6c800171-bea6-4cb2-811d-7c419a59dcb8",
     qty: 0,
@@ -349,11 +350,11 @@ export const products = [
     description:
       "Fusce sed est nec ipsum convallis semper nec id ipsum. Fusce sed est nec ipsum convallis semper nec id ipsum.",
     brand: "Kate Spade",
-    category: "Sports",
+    category: "android",
     gender: "Men",
     weight: "400g",
     quantity: 6,
-    image: sports7,
+    image: android7,
     rating: 4.1,
     price: 1499,
     newPrice: 1399,
@@ -366,11 +367,11 @@ export const products = [
     description:
       "Vivamus mattis quam sed libero pretium ullamcorper. Vivamus mattis quam sed libero pretium ullamcorper.",
     brand: "Ray-Ban",
-    category: "Sports",
+    category: "android",
     gender: "Women",
     weight: "102g",
     quantity: 9,
-    image: sports8,
+    image: android8,
     rating: 4.3,
     price: 2999,
     newPrice: 2599,
@@ -383,11 +384,11 @@ export const products = [
     description:
       "Pellentesque ac tortor sed ipsum feugiat condimentum. Pellentesque ac tortor sed ipsum feugiat condimentum.",
     brand: "Persol",
-    category: "Vision",
+    category: "ios",
     gender: "Men",
     weight: "190g",
     quantity: 5,
-    image: vision2,
+    image: ios2,
     rating: 2.8,
     price: 1299,
     newPrice: 1000,
@@ -400,63 +401,63 @@ export const products = [
     description:
       "Integer et nunc in turpis maximus facilisis ac ac elit. Integer et nunc in turpis maximus facilisis ac ac elit.",
     brand: "Kate Spade",
-    category: "Vision",
+    category: "ios",
     gender: "Unisex",
     weight: "750g",
     quantity: 15,
-    image: vision3,
+    image: ios3,
     rating: 4.7,
     price: 2999,
     newPrice: 2899,
   },
-  {
-    _id: "53ca5f50-39f4-4c77-be14-c3246cfc5dc6",
-    qty: 0,
-    name: "Burgas",
-    description:
-      "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Carrera",
-    category: "Sunglasses",
-    gender: "Women",
-    weight: "550g",
-    quantity: 7,
-    image: sun11,
-    rating: 4.8,
-    price: 4999,
-    newPrice: 4700,
-  },
-  {
-    _id: "a0a1ca71-d121-48af-a463-4ee790df28de",
-    qty: 0,
-    name: "Sofia",
-    description:
-      "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Carrera",
-    category: "Sunglasses",
-    gender: "Women",
-    weight: "550g",
-    quantity: 7,
-    image: sun12,
-    rating: 4.8,
-    price: 4999,
-    newPrice: 4399,
-  },
-  {
-    _id: "2b5f4f03-7ec7-4a5c-b2a7-14dbcc4f2f6b",
-    qty: 0,
-    name: "Plovediv",
-    description:
-      "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
-    brand: "Carrera",
-    category: "Sunglasses",
-    gender: "Unisex",
-    weight: "550g",
-    quantity: 7,
-    image: sun13,
-    rating: 4.8,
-    price: 4999,
-    newPrice: 3499,
-  },
+  // {
+  //   _id: "53ca5f50-39f4-4c77-be14-c3246cfc5dc6",
+  //   qty: 0,
+  //   name: "Burgas",
+  //   description:
+  //     "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
+  //   brand: "Carrera",
+  //   category: "Sunglasses",
+  //   gender: "Women",
+  //   weight: "550g",
+  //   quantity: 7,
+  //   image: sun11,
+  //   rating: 4.8,
+  //   price: 4999,
+  //   newPrice: 4700,
+  // },
+  // {
+  //   _id: "a0a1ca71-d121-48af-a463-4ee790df28de",
+  //   qty: 0,
+  //   name: "Sofia",
+  //   description:
+  //     "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
+  //   brand: "Carrera",
+  //   category: "Sunglasses",
+  //   gender: "Women",
+  //   weight: "550g",
+  //   quantity: 7,
+  //   image: sun12,
+  //   rating: 4.8,
+  //   price: 4999,
+  //   newPrice: 4399,
+  // },
+  // {
+  //   _id: "2b5f4f03-7ec7-4a5c-b2a7-14dbcc4f2f6b",
+  //   qty: 0,
+  //   name: "Plovediv",
+  //   description:
+  //     "Donec interdum felis non justo sollicitudin lobortis. Donec interdum felis non justo sollicitudin lobortis.",
+  //   brand: "Carrera",
+  //   category: "Sunglasses",
+  //   gender: "Unisex",
+  //   weight: "550g",
+  //   quantity: 7,
+  //   image: sun13,
+  //   rating: 4.8,
+  //   price: 4999,
+  //   newPrice: 3499,
+  // },
   {
     _id: "440cec02-21e1-4447-bdd9-d51482b7ce4b",
     qty: 0,
@@ -464,11 +465,11 @@ export const products = [
     description:
       "Vestibulum eu tellus sed lorem tristique lacinia ut vel urna. Vestibulum eu tellus sed lorem tristique lacinia ut vel urna.",
     brand: "Carrera",
-    category: "Vision",
+    category: "ios",
     gender: "Unisex",
     weight: "300g",
     quantity: 8,
-    image: vision4,
+    image: ios4,
     rating: 3.8,
     price: 2499,
     newPrice: 1499,
@@ -480,11 +481,11 @@ export const products = [
     description:
       "Aenean at velit consequat, faucibus mi id, tempor velit. Aenean at velit consequat, faucibus mi id, tempor velit.",
     brand: "Oakley",
-    category: "Vision",
+    category: "ios",
     gender: "Women",
     weight: "900g",
     quantity: 3,
-    image: vision5,
+    image: ios5,
     rating: 3.5,
     price: 3999,
     newPrice: 3790,
@@ -496,11 +497,11 @@ export const products = [
     description:
       "Fusce sed est nec ipsum convallis semper nec id ipsum. Fusce sed est nec ipsum convallis semper nec id ipsum.",
     brand: "Kate Spade",
-    category: "Vision",
+    category: "ios",
     gender: "Men",
     weight: "400g",
     quantity: 6,
-    image: vision6,
+    image: ios6,
     rating: 4.1,
     price: 1499,
     newPrice: 1459,

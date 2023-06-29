@@ -37,7 +37,9 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
         Vider
       </button>
       {/* <section className="py-3">
-        <FilterHeading text="Gender" />
+
+        <FilterHeading text="Catégories" />
+
         <div className="grid grid-rows-2 grid-cols-2 gap-2">
           {gendersList.map((data, index) => (
             <InputRadioType2 data={data} key={index} />
@@ -49,7 +51,7 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
         <InputRange />
       </section>
       <section className="py-3">
-        <FilterHeading text="Catégories" />
+        <FilterHeading text="Marques" />
         <div className="flex flex-col gap-2">
           {checkboxCategories.map((data, index) => (
             <Checkbox data={data} key={index} />
@@ -65,6 +67,7 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
         ))}
       </section>
       <section className="py-3">
+
         <FilterHeading text="Couleur" />
         <div className="flex flex-col gap-2">
           {colorOptions.map((color, index) => (
@@ -80,6 +83,7 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
           ))}
         </div>
       </section>
+
     </aside>
   );
 };

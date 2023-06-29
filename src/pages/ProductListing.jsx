@@ -82,9 +82,9 @@ const ProductListing = () => {
           </section>
 
           {productsList.length > 0 ? (
-            <main className="relative grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+            <main className="relative grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3">
               {productsList.map((glass) => (
-                <SingleProduct key={glass.id} product={glass} />
+                <SingleProduct key={glass.id} product={glass} className="h-96" />
               ))}
             </main>
           ) : (
