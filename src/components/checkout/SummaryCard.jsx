@@ -11,7 +11,7 @@ const SummaryCard = ({ setShowModal }) => {
 
   return (
     <section className="py-3 md:py-7 px-5 md:px-7 lg:px-12 rounded-md shadow-sm bg-white/[0.7] flex flex-col gap-5 w-full h-min">
-      <h1 className="text-2xl font-bold">Order Summary</h1>
+      <h1 className="text-2xl font-bold">Récapitulatif de la commande</h1>
 
       {cart.map((item) => (
         <div
@@ -25,9 +25,9 @@ const SummaryCard = ({ setShowModal }) => {
               </div>
               <div className="">
                 <h2>{item.name}</h2>
-                <span>₹{item.newPrice}</span>
+                <span>{item.newPrice}€</span>
                 <span className="text-sm text-gray-500 line-through px-2">
-                  ₹{item.price}
+                  {item.price}€
                 </span>
               </div>
             </div>
@@ -46,7 +46,7 @@ const SummaryCard = ({ setShowModal }) => {
       <hr />
       <div className="flex justify-between items-center">
         <p className=" text-gray-600">Total</p>
-        <p className="text-2xl">₹{totalPriceOfCartProducts}</p>
+        <p className="text-2xl">{totalPriceOfCartProducts}€</p>
       </div>
 
       <div className="w-full py-2   flex gap-4 items-center">
@@ -63,7 +63,7 @@ const SummaryCard = ({ setShowModal }) => {
           }}
           className="btn-rounded-primary rounded-full flex items-center gap-2 md:text-sm lg:text-base"
         >
-          Place Order
+          Continuer vers le paiement
         </button>
       </div>
     </section>

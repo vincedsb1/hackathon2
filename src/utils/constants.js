@@ -1,5 +1,5 @@
-export const checkboxCategories = ["vision", "sunglasses", "sports"];
+export const checkboxCategories = ["android", "ios"];
 
-export const gendersList = ["all", "men", "women", "unisex"];
+export const storageList = ["8", "16", "32", "64", "128", "256", "512"];
 
-export const ratings = [1, 2, 3, 4];
+export const memoryList = ["2", "4", "8", "16", "32", "64"];

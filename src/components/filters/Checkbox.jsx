@@ -1,34 +1,38 @@
 import { useProductsContext } from "../../contexts";
 
-const Checkbox = ({ data }) => {
-  const {
-    applyFilters,
-    filters: { categories },
-  } = useProductsContext();
-  const checkboxHandler = (e) => {
-    let catArr = categories;
+const Checkbox = ({ data, isRam }) => {
+    const {
+        applyFilters,
+        filters: { categories },
+    } = useProductsContext();
 
-    if (e.target.checked) {
-      catArr.push(e.target.value);
-    } else {
-      catArr = catArr.filter((cat) => cat !== e.target.value);
-    }
+    const checkboxHandler = (e) => {
+        let catArr = categories;
 
-    applyFilters(e.target.name, catArr);
-  };
-  return (
-    <label className="capitalize cursor-pointer">
-      <input
-        className="accent-[--primary-text-color] me-2 cursor-pointer"
-        type="checkbox"
-        name="categories"
-        checked={categories.includes(data)}
-        value={data}
-        onChange={checkboxHandler}
-      />
-      {data}
-    </label>
-  );
+        if (e.target.checked) {
+            catArr.push(e.target.value);
+        } else {
+            catArr = catArr.filter((cat) => cat !== e.target.value);
+        }
+
+        applyFilters("categories", catArr);
+    };
+
+    const labelText = isRam ? `${data} Go` : data;
+
+    return (
+        <label className="capitalize cursor-pointer">
+            <input
+                className="accent-[--primary-text-color] me-2 cursor-pointer"
+                type="checkbox"
+                name="categories"
+                checked={categories.includes(data)}
+                value={data}
+                onChange={checkboxHandler}
+            />
+            {labelText}
+        </label>
+    );
 };
 
 export default Checkbox;

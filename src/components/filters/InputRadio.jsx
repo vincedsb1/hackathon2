@@ -1,10 +1,11 @@
 import React from "react";
 import { useProductsContext } from "../../contexts";
+// import { gendersList } from "../../utils/constants";
 
 const InputRadio = ({ data, name }) => {
   const {
     applyFilters,
-    filters: { rating },
+    filters: { gendersList },
   } = useProductsContext();
 
   return (
@@ -15,9 +16,9 @@ const InputRadio = ({ data, name }) => {
         name={name}
         value={data}
         onChange={(e) => applyFilters(name, data)}
-        checked={data === rating}
+        checked={data === gendersList}
       />{" "}
-      {data} Stars & above
+      {data} Go
     </label>
   );
 };

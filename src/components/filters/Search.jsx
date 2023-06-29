@@ -59,7 +59,7 @@ const Search = () => {
           className="w-full py-2 px-3 bg-transparent focus:outline-none"
           type="search"
           value={search}
-          placeholder="Search Glasses"
+          placeholder="Rechercher un téléphone"
           onChange={changeHandler}
         />
         <CiSearch />
@@ -68,7 +68,7 @@ const Search = () => {
         <ul className="absolute bg-amber-50 w-full max-h-72 overflow-auto rounded-b-md z-10">
           {searching ? (
             <li className="h-10 flex items-center justify-center">
-              <img src={spinningLoaders} alt="Searching..." />
+              <img src={spinningLoaders} alt="Recherche en cours..." />
             </li>
           ) : filteredData.length ? (
             filteredData.map((product) => (
@@ -82,7 +82,7 @@ const Search = () => {
             ))
           ) : (
             <li className="h-10 flex items-center justify-center">
-              No Item to show
+              Aucun produit trouvé
             </li>
           )}
         </ul>

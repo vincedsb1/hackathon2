@@ -78,7 +78,7 @@ const CartItemCard = ({ product, isSearch, setSearch }) => {
                     disabled={disableCart}
                     onClick={() => deleteProductFromCart(product._id)}
                   >
-                    Remove from Bag
+                    Retirer du panier
                   </button>
                   <button
                     className="disabled:cursor-not-allowed"
@@ -103,9 +103,9 @@ const CartItemCard = ({ product, isSearch, setSearch }) => {
           </div>
         </div>
         <div className="flex flex-col items-end">
-          <span>₹{product.newPrice}</span>
+          <span>{product.newPrice} €</span>
           <span className="text-xs line-through text-gray-600">
-            ₹ {product.price}
+            {product.price} €
           </span>
         </div>
       </div>

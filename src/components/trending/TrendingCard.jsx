@@ -17,15 +17,15 @@ const TrendingCard = ({ product }) => {
         <div className="flex flex-col items-start ">
           <div className="flex items-center justify-between">
             <h1 className=" text-lg xs:text-base sm:text-lg font-bold">
-              ₹{product.price}
+              {product.price} €
             </h1>
-            <button className="p-0.5 custom-bg-gradient rounded-md ms-2">
+            {/* <button className="p-0.5 custom-bg-gradient rounded-md ms-2">
               {product.inCart ? (
                 <AiOutlineCheck className="text-white font-bold text-sm" />
               ) : (
                 <AiOutlinePlus className="text-white font-bold text-sm" />
               )}
-            </button>
+            </button> */}
           </div>
           <p className="text-gray-600 text-sm text-end">{product.category}</p>
         </div>
@@ -34,7 +34,7 @@ const TrendingCard = ({ product }) => {
         <img
           src={product.image}
           alt={product.name}
-          className="w-32 h-20 xs:w-28 xs:h-16 sm:w-32 sm:h-20 py-2 object-cover hover:scale-110 transition"
+          className="w-32 h-32 xs:w-28 xs:h-32 sm:w-32 sm:h-36 py-2 object-cover hover:scale-110 transition"
         />
       </div>
     </Link>

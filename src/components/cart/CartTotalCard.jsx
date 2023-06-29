@@ -19,7 +19,7 @@ const CartTotalCard = ({ cart }) => {
       <hr />
       <div className="flex justify-between items-center">
         <p className=" text-gray-600">Total</p>
-        <p className="text-2xl">₹ {totalPriceOfCartProducts}</p>
+        <p className="text-2xl">€ {totalPriceOfCartProducts}</p>
       </div>
 
       <div className="w-full py-2   flex gap-4 items-center">
@@ -34,7 +34,7 @@ const CartTotalCard = ({ cart }) => {
             }, 100);
           }}
         >
-          Proceed to Checkout
+          Passer au paiement
         </button>
       </div>
     </section>

@@ -51,7 +51,7 @@ const Modal = ({ showModal, setShowModal }) => {
     const options = {
       key: "rzp_test_H2lv7MTHG3JATn",
       amount: totalPriceOfCartProducts * 100,
-      currency: "INR",
+      currency: "EUR",
       name: "Eyesome",
       description: "Be awesome with eyesome :)",
       image: appLogo,
@@ -101,7 +101,7 @@ const Modal = ({ showModal, setShowModal }) => {
                     {disableBtn ? (
                       <img src={spinningLoader} alt="" height={20} />
                     ) : (
-                      <span>Confirm Order</span>
+                      <span>Confirmer la commande</span>
                     )}
                   </button>
                 </div>
