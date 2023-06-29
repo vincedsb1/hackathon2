@@ -8,13 +8,13 @@ import glassCategory3 from "../../assets/categories/android.jpg";
  * */
 
 export const categories = [
-  {
-    _id: "ef1f52f6-4e35-4cd7-ad4a-0a9b52de894f",
-    categoryName: "all",
-    description:
-      "Découvrez notre sélection complète de téléphones avec une vision claire et un design élégant pour une combinaison parfaite de fonctionnalité et de style.",
-    categoryImg: glassCategory1,
-  },
+  // {
+  //   _id: "ef1f52f6-4e35-4cd7-ad4a-0a9b52de894f",
+  //   categoryName: "all",
+  //   description:
+  //     "Découvrez notre sélection complète de téléphones avec une vision claire et un design élégant pour une combinaison parfaite de fonctionnalité et de style.",
+  //   categoryImg: glassCategory1,
+  // },
   {
     _id: "937d27a0-51b7-4005-bb04-4f5f111eac90",
     categoryName: "android",

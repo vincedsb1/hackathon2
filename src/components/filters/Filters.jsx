@@ -37,14 +37,14 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
       >
         Vider
       </button>
-      <section className="py-3">
+      {/* <section className="py-3">
         <FilterHeading text="Catégories" />
         <div className="grid grid-rows-2 grid-cols-2 gap-2">
           {gendersList.map((data, index) => (
             <InputRadioType2 data={data} key={index} />
           ))}
         </div>
-      </section>
+      </section> */}
       <section className="py-3">
         <FilterHeading text="Prix" />
         <InputRange />
