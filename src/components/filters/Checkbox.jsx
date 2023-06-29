@@ -1,10 +1,11 @@
 import { useProductsContext } from "../../contexts";
 
-const Checkbox = ({ data }) => {
+const Checkbox = ({ data, isRam }) => {
   const {
     applyFilters,
     filters: { categories },
   } = useProductsContext();
+
   const checkboxHandler = (e) => {
     let catArr = categories;
 
@@ -16,6 +17,9 @@ const Checkbox = ({ data }) => {
 
     applyFilters(e.target.name, catArr);
   };
+
+  const labelText = isRam ? `${data} RAM` : data;
+
   return (
     <label className="capitalize cursor-pointer">
       <input
@@ -26,9 +30,10 @@ const Checkbox = ({ data }) => {
         value={data}
         onChange={checkboxHandler}
       />
-      {data}
+      {labelText}
     </label>
   );
 };
 
 export default Checkbox;
+
