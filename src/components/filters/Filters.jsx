@@ -76,7 +76,7 @@ const Filters = ({ isFilterOpen, setIsFilterOpen }) => {
         </div>
       </section>
       <section className="py-3">
-        <FilterHeading text="Mémoire RAM" />
+        <FilterHeading text="Mémoire" />
         <div className="flex flex-col gap-2">
           {ramOptions.map((ram, index) => (
             <Checkbox data={ram} key={index} isRam={true} />
