@@ -69,22 +69,22 @@ const ProductDetails = () => {
             <ul className="flex gap-5">
               <div>
                 <li>
-                  <span className="text-gray-500 text-sm">Marque: </span>
+                  <span className="text-gray-500 text-sm">Marque : </span>
                   {product?.brand}
                 </li>
                 <li>
-                  <span className="text-gray-500 text-sm">Catégorie: </span>
+                  <span className="text-gray-500 text-sm">Système d'exploitation : </span>
                   {product?.category}
                 </li>
               </div>
               <div>
                 <li>
-                  <span className="text-gray-500 text-sm">Type: </span>
-                  {product?.gender}
+                  <span className="text-gray-500 text-sm">Mémoire : </span>
+                  {product?.gender} Go
                 </li>
                 <li>
-                  <span className="text-gray-500 text-sm">Poids: </span>
-                  {product?.weight}
+                  <span className="text-gray-500 text-sm">Stockage : </span>
+                  {product?.weight} Go
                 </li>
               </div>
             </ul>
@@ -93,10 +93,10 @@ const ProductDetails = () => {
           <div className="flex gap-2 items-center pb-10 sm:pb-0">
             Prix:
             <span className="ms-1 text-xl sm:text-2xl text-amber-600">
-              {product?.newPrice}€
+              {product?.newPrice} €
             </span>
             <span className="text-sm text-gray-600 line-through">
-              {product?.price}€
+              {product?.price} €
             </span>
           </div>
 
