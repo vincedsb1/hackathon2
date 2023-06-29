@@ -22,6 +22,7 @@ import ios9 from "../../assets/ios/ios9.png";
  * You can add products of your wish with different attributes
  * */
 export const products = [
+
     {
         _id: "3d7e9c33-0080-4bd2-b2bf-56552da31e35",
         qty: 0,
@@ -300,4 +301,5 @@ export const products = [
         price: 300,
         newPrice: 249,
     },
+
 ];

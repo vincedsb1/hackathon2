@@ -19,13 +19,13 @@ const TrendingCard = ({ product }) => {
             <h1 className=" text-lg xs:text-base sm:text-lg font-bold">
               {product.price} €
             </h1>
-            <button className="p-0.5 custom-bg-gradient rounded-md ms-2">
+            {/* <button className="p-0.5 custom-bg-gradient rounded-md ms-2">
               {product.inCart ? (
                 <AiOutlineCheck className="text-white font-bold text-sm" />
               ) : (
                 <AiOutlinePlus className="text-white font-bold text-sm" />
               )}
-            </button>
+            </button> */}
           </div>
           <p className="text-gray-600 text-sm text-end">{product.category}</p>
         </div>
