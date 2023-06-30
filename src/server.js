@@ -22,11 +22,16 @@ import {
   getWishlistItemsHandler,
   removeItemFromWishlistHandler,
 } from "./backend/controllers/WishlistController";
+
 import { categories } from "./backend/db/categories";
 import { products } from "./backend/db/products";
 import { users } from "./backend/db/users";
 
+import ChatController from "./backend/controllers/ChatController";
+
 export function makeServer({ environment = "development" } = {}) {
+  const chatController = ChatController();
+
   return new Server({
     serializers: {
       application: RestSerializer,
@@ -38,11 +43,12 @@ export function makeServer({ environment = "development" } = {}) {
       user: Model,
       cart: Model,
       wishlist: Model,
+      message: Model,
     },
 
     // Runs on the start of the server
     seeds(server) {
-      // disballing console logs from Mirage
+      // disabling console logs from Mirage
       server.logging = false;
       products.forEach((item) => {
         server.create("product", { ...item });
@@ -85,6 +91,10 @@ export function makeServer({ environment = "development" } = {}) {
         "/user/wishlist/:productId",
         removeItemFromWishlistHandler.bind(this)
       );
+
+      // chat routes (public)
+      this.get("/chat", chatController.getAllMessages.bind(chatController));
+      this.post("/chat", chatController.addMessage.bind(chatController));
     },
   });
 }
